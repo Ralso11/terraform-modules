@@ -16,10 +16,10 @@ provider "aws" {
 module "vpc" {
   source = "../../vpc"
 
-  project_name        = "modules-demo"
-  aws_region           = "eu-central-1"
-  vpc_cidr            = "10.5.0.0/16"
-  public_subnet_cidr  = "10.5.1.0/24"
+  project_name       = "modules-demo"
+  aws_region         = "eu-central-1"
+  vpc_cidr           = "10.5.0.0/16"
+  public_subnet_cidr = "10.5.1.0/24"
 }
 
 output "demo_vpc_id" {
